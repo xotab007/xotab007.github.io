@@ -1,0 +1,124 @@
+html, body, section, div {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Monaco;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    background: #ededed;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+}
+
+#banner {
+    flex-direction: column;
+    pointer-events: none;
+}
+
+#heading {
+    /* none */
+}
+
+#banner h1 {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.1em;
+}
+
+#description {
+    color: dimgray;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+.article {
+    padding: 1em;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    margin-top: 1em;
+}
+
+.picture{
+    padding: 1em;
+    /*Выделение изрбражения*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.picture img {
+    width: auto;
+    box-shadow: 0 0 10px;
+    border-radius: 50%;
+    background: #aaaaaa;
+}
+
+.text{
+    padding: 1em;
+    min-width: 20em;
+}
+
+.text p {
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+.text a{
+    color: dimgray;
+    text-decoration: none;
+}
+
+.text a:hover{
+    color: darkblue;
+}
+
+/* TEXT UL Social Media */
+.text ul{
+    text-align: right;
+}
+
+.text li{
+    padding-top: 0.1em;
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+
+.text li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.2em;
+    opacity: 0.6; /* затухание */
+}
+
+.text li img:hover{
+    opacity: 1;
+}
+
+/* ------------------------- */
+
+.article h2 {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.center {
+    max-width: 900px;
+    margin: auto;
+}
